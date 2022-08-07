@@ -464,3 +464,73 @@ img {
 .services_button:hover .services_icon {
   transform: translateX(0.25rem);
 }
+
+.services_modal {
+  position: fixed;
+  inset: 0;
+  background-color: hsla(var(--second-hue), 28%, 16%, 0.7);
+  padding: 2rem 1rem;
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+  z-index: var(--z-modal);
+}
+
+.services_modal-content {
+  position: relative;
+  background-color: var(--body-color);
+  padding: 4.5rem 1.5rem 2.5rem;
+  border-radius: 1.5rem;
+}
+
+.services_modal-title,
+.services_modal-description {
+  text-align: center;
+}
+
+.services_modal-title {
+  font-size: var(--h3-font);
+  color: var(--first-color);
+  margin-bottom: 1rem;
+}
+
+.services_modal-description {
+  font-size: var(--small-font);
+  margin-bottom: 2rem;
+}
+
+.services_modal-list {
+  display: grid;
+  row-gap: 0.75rem;
+}
+
+.services_modal-item {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 0.5rem;
+}
+
+.services_modal-icon {
+  font-size: 1.5rem;
+  color: var(--first-color);
+}
+
+.services_modal-info {
+  font-size: var(--small-font);
+}
+
+.services_modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
+.services_modal-active {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
