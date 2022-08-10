@@ -55,3 +55,24 @@ filters.forEach((f) => {
     });
   });
 });
+
+// Form
+
+const inputs = document.querySelectorAll(".contact_form-input");
+const labels = document.querySelectorAll(".contact_form-tag");
+
+inputs.forEach((input, i) => {
+  input.addEventListener("focus", () => {
+    labels.forEach(() => {
+      labels[i].style.animation = "inputFocus 0.2s linear forwards";
+    });
+  });
+});
+
+inputs.forEach((input, i) => {
+  input.addEventListener("blur", () => {
+    labels.forEach(() => {
+      labels[i].style.animation = "inputBlur 0.2s linear forwards";
+    });
+  });
+});
