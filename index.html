@@ -24,37 +24,37 @@
         <div class="nav_menu">
           <ul class="nav_list">
             <li class="nav_item">
-              <a href="#home" class="nav_link active-link">
+              <a href="#home" class="nav_link active-link" data-section="home">
                 <i class="bx bx-home-alt"></i>
               </a>
             </li>
 
             <li class="nav_item">
-              <a href="#about" class="nav_link">
+              <a href="#about" class="nav_link" data-section="about">
                 <i class="bx bx-user"></i>
               </a>
             </li>
 
             <li class="nav_item">
-              <a href="#skills" class="nav_link">
+              <a href="#skills" class="nav_link" data-section="skills">
                 <i class="bx bx-book"></i>
               </a>
             </li>
 
             <li class="nav_item">
-              <a href="#work" class="nav_link">
-                <i class="bx bx-briefcase-alt-2"></i>
+              <a href="#services" class="nav_link" data-section="services">
+                <i class="bx bxs-home-smile"></i>
               </a>
             </li>
 
             <li class="nav_item">
-              <a href="#contact" class="nav_link">
-                <i class="bx bx-message-square-detail"></i>
+              <a href="#work" class="nav_link" data-section="work">
+                <i class="bx bx-briefcase-alt-2"></i>
               </a>
             </li>
           </ul>
         </div>
-
+        <!-- Theme Change Button -->
         <i class="bx bx-moon change-theme" id="theme-button"></i>
       </nav>
     </header>
@@ -687,7 +687,55 @@
 
     <!-- Footer -->
 
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer_container container">
+        <h1 class="footer_title">Kareem</h1>
+
+        <ul class="footer_list">
+          <li>
+            <a href="#home" class="footer_link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="footer_link">About</a>
+          </li>
+
+          <li>
+            <a href="#work" class="footer_link">Projects</a>
+          </li>
+        </ul>
+
+        <ul class="footer_social">
+          <a
+            href="https://www.linkedin.com/in/kareem-hesham-fathalla/"
+            target="_blank"
+            class="footer_social-link"
+          >
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+          <a
+            href="https://github.com/Kareemhesham2005"
+            target="_blank"
+            class="footer_social-link"
+          >
+            <i class="bx bxl-github"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/kareem.hesham.714/"
+            target="_blank"
+            class="footer_social-link"
+          >
+            <i class="bx bxl-facebook-circle"></i>
+          </a>
+        </ul>
+
+        <span class="footer_copy"> &#169; Kareem. All rights reserved </span>
+      </div>
+    </footer>
+    <!-- Scroll Reveal Animation File -->
+    <script src="JS/scrollreveal.min.js"></script>
+
+    <!-- Main Js File -->
     <script src="JS/main.js"></script>
   </body>
 </html>
