@@ -86,30 +86,26 @@ const skills = document.querySelector("#skills").scrollHeight;
 const services = document.querySelector("#services").scrollHeight;
 window.onscroll = () => {
   let section = "home";
-  if (window.scrollY >= 0 && window.scrollY <= home + 50) {
+  if (window.scrollY >= 0 && window.scrollY <= home) {
     section = "home";
-  } else if (
-    window.scrollY > home + 50 &&
-    window.scrollY <= home + 50 + about
-  ) {
+  } else if (window.scrollY > home && window.scrollY <= home + about) {
     section = "about";
   } else if (
-    window.scrollY > home + 50 + about &&
-    window.scrollY <= home + about + 50 + skills
+    window.scrollY > home + about &&
+    window.scrollY <= home + about + skills
   ) {
     section = "skills";
   } else if (
-    window.scrollY > home + about + 50 + skills &&
-    window.scrollY <= home + about + 50 + skills + services
+    window.scrollY > home + about + skills &&
+    window.scrollY <= home + about + skills + services
   ) {
     section = "services";
   } else if (
-    window.scrollY > home + about + 50 + skills + services &&
+    window.scrollY > home + about + skills + services &&
     window.scrollY <=
       home +
         about +
         skills +
-        50 +
         services +
         document.querySelector("#work").scrollHeight
   ) {
