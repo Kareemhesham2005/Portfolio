@@ -178,6 +178,7 @@ body.light-theme {
 
 .main {
   overflow: hidden;
+  margin-top: 72px;
 }
 
 .section {
